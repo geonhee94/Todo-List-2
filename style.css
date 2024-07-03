@@ -12,6 +12,10 @@ body{
 }
 .task-area{
     border:1px solid skyblue;
+    margin-top: 1em;
+}
+.task-board{
+    padding: 1em;
 }
 .task-tabs{
     display: flex;
@@ -36,5 +40,31 @@ body{
 .task{
     display: flex;
     justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+    width: 100%;
+    position: relative;
+   
+}
+.task-live{
     padding: 1em;
+}
+
+.task-done{
+    text-decoration: line-through;
+    background-color: lightgrey;
+    
+}
+.button-box{
+    display: flex;
+}
+.button-box button{
+height: 100%;
+  border: none;
+  width: 5em;
+  margin: 0;
+  background-color: white;
+}
+.button-box button :active {
+    position: relative;
+    top: 2px;
 }
