@@ -9,26 +9,30 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">   
-        <h1>To Do List</h1>
+    <div class="container">  
+        <div class="first-text">
+            <h1 >To Do List </h1>
+            <h2 class="first-text-sub">YOU CAN DO IT!</h2>
+        </div> 
+        
         <section class="input-area">
-            <input type="text" id="task-input"/>
-            <button id="add-button">+</button>
+            <input type="text" id="task-input" class = "text-area"/>
+            <button id="add-button" class = "text-next-button">ADD</button>
         </section>
  
 
  <section class="task-area">
     <div class="task-tabs">
         <div id="under-line"></div>
-        <div>
+        <div id="all" class="all-art">
         모두
         </div>
         
-        <div>
+        <div id="ongoing" class="ongoing-art">
         진행중
         </div>
 
-        <div>
+        <div id="done" class="done-art">
         끝남
         </div>
 

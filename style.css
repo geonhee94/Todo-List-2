@@ -3,17 +3,38 @@ body{
     background-image: url("images/image2.jpg");
     background-repeat:no-repeat ;
     background-size: cover;
+    font-family: "Rajdhani", sans-serif;
 
 }
 .container{
     background-color: white;
-    min-height: 100vh;
+    min-height: 99vh;
+    margin-top: 20px;
+    border-radius: 20px;
+    border:3px solid #ed9522;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.text-next-button{
+    background-color: #e7e7a9;
+    border-radius: 10px;
+}
+
+.text-next-button:hover{
+    background-color: #ed9522;
+}
+
+.text-area{
+    border-radius: 10px;
+}
+.first-text{
+    display: flex;
+    justify-content: space-between;
 }
 .task-area{
     border:1px solid skyblue;
     margin-top: 1em;
 }
+
 .task-board{
     padding: 1em;
 }
@@ -22,20 +43,23 @@ body{
     border-bottom:1px solid skyblue;
     /*부모에 릴레이티브*/
     position: relative;
+    border-radius: 10px;
 }
 .task-tabs div{
     padding: 1em;
+    cursor: pointer;
 }
 #under-line{
     height: 4px;
     background-color: pink;
     /*자식에 앱솔루트 */
     position: absolute;
-    width:67px;
+    width:65px;
     left:0px;
-    top:52px;
+    top:54px;
     /*패딩 0은 div에 기본적인 값이 있어서 써준것*/
     padding: 0;
+    transition: 0.5s;
 }
 .task{
     display: flex;
@@ -43,8 +67,10 @@ body{
     border-bottom: 1px solid lightgray;
     width: 100%;
     position: relative;
+    border-radius: 10px;
    
 }
+
 .task-live{
     padding: 1em;
 }
@@ -67,4 +93,45 @@ height: 100%;
 .button-box button :active {
     position: relative;
     top: 2px;
+}
+
+.all-art:hover{
+    background-color: #ed9522;
+    font-weight: bold;
+}
+.ongoing-art:hover{
+    background-color: aqua;
+    font-weight: bold;
+}
+
+.done-art:hover{
+    background-color: lightcoral;
+    font-weight: bold;
+}
+.xmark:hover{
+    background-color: lightgray;
+}
+.rotate:hover{
+    background-color: aqua;
+}
+.check:hover{
+    background-color: #ed9522;
+}
+
+@media(max-width:500px) {
+    .first-text-sub{
+        display: none;
+    }
+    .task-tabs{
+        justify-content: space-around;
+    }
+    .all-art{
+        font-weight: bold;
+    }
+    .ongoing-art{
+        font-weight: bold;
+    }
+    .done-art{
+        font-weight: bold;
+    }
 }
